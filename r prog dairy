@@ -1,0 +1,15 @@
+data <- data.frame(
+  "AgeGroup" = c("0-10", "11-30", "31-50", "51-80"),
+  "Dairy" = c(50, 35, 25, 40),
+  "StapleFood" = c(30, 45, 55, 40),
+  "HighCalorieFood" = c(10, 15, 13, 4),
+  "Supplements" = c(10, 5, 7, 16)
+)
+data_matrix <- as.matrix(data[, -1])
+barplot(data_matrix, col = c("blue", "green", "red", "purple"),
+        main = "Daily Consumption by Age Group",
+        xlab = "Age Group", ylab = "Daily Consumption",
+        names.arg = data$AgeGroup, legend.text = colnames(data_matrix), 
+        args.legend = list(title = "Food Type", x = "topright", cex = 0.8),
+        beside = TRUE)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------

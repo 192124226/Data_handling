@@ -1,0 +1,4 @@
+x <- c("January", "February", "March", "April", "May")
+y <- c(15000, 18000, 22000, 20000, 23000)
+x_numeric <- as.numeric(factor(x, levels = x))
+plot(x_numeric, y, type="p", col="blue", xlab="Month", ylab="Sales", main="Sales Over Time")

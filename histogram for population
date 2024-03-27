@@ -1,0 +1,12 @@
+ages <- c(22, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+hist(ages, breaks = 5, col = 'skyblue', main = 'Distribution of Ages in a Population', xlab = 'Age', ylab = 'Frequency')
+----------------------------------------------------------------------------------------------------------------------------------
+import matplotlib.pyplot as plt
+ages = [22, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80]
+plt.figure(figsize=(8, 6))
+plt.hist(ages, bins=5, color='skyblue', edgecolor='black')
+plt.title('Distribution of Ages in a Population')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.grid(True)
+plt.show()
